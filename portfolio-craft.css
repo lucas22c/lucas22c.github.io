@@ -1,4 +1,4 @@
-/* Craft pass: put the rink and project work first; keep the interface quiet. */
+/* Craft pass: keep the hockey visual distinctive and the interface quiet. */
 :root{--surface:#111827;--surface-2:#151e2d;--line:rgba(255,255,255,.08);--sans:"Plus Jakarta Sans",sans-serif;--mono:"DM Mono",monospace}
 body{font-size:14px;line-height:1.65}
 .scorebug{backdrop-filter:blur(10px)}
@@ -14,11 +14,12 @@ h1 span,.lineup-heading h2 span{color:var(--text)}
 .icon-link:hover,.palette-trigger:hover,.filter-button.active,.filter-button:hover{background:#151e2d}
 .project-card:hover{transform:none;border-color:rgba(255,255,255,.18)}
 .resume-button:hover,.submit-button:hover{background:#192431;border-color:rgba(56,189,248,.55)}
-/* The reverse face must counter-rotate the card so the back typography reads normally. */
-.rookie-card{transition:transform .18s ease,border-color .18s}
+/* Keep the rotating card shell separate from the back face so its text is never mirrored. */
+.rookie-card{transform-style:preserve-3d;transition:transform .18s ease,border-color .18s}
 .rookie-card.is-flipped{transform:perspective(850px) rotateX(0deg) rotateY(180deg)}
-.rookie-card .player-card-back{transform:rotateY(0deg);backface-visibility:hidden}
-.rookie-card.is-flipped .player-card-back{transform:rotateY(180deg)}
+.rookie-card .player-card-back{transform:rotateY(180deg);backface-visibility:hidden;opacity:0}
+.rookie-card.is-flipped .player-card-back{transform:rotateY(180deg);backface-visibility:hidden;opacity:1}
+.rookie-card.is-flipped>*:not(.player-card-back){opacity:0;backface-visibility:hidden}
 .rookie-card:after{background:radial-gradient(circle at var(--shine-x,50%) var(--shine-y,50%),rgba(255,255,255,.08),transparent 42%)}
 /* Six true roster positions: three forwards, two defenders, and a goalie. */
 .formation-rink{min-height:360px}
