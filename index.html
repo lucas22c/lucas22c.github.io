@@ -1,384 +1,94 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lucas Coster</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B0F17">
+  <meta name="description" content="Lucas Coster — Computer Engineer, full-stack developer, and Queen's University graduate.">
+  <title>Lucas Coster — Computer Engineer</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
-
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="scorebug">
+    <div class="scorebug-top wrap">
+      <a class="brand" href="#/overview" aria-label="Lucas Coster, Overview"><span class="brand-mark">LC</span><span>Lucas Coster<small>COMPUTER ENGINEER</small></span></a>
+      <div class="header-status"><span class="live-dot"></span> ACTIVE ROSTER</div>
+      <div class="quick-links" aria-label="Quick links">
+        <a class="icon-link" href="https://github.com/lucas22c" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+        <a class="icon-link" href="https://www.linkedin.com/in/lucascoster/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+        <a class="icon-link email-link" href="mailto:lucascoster90@gmail.com" aria-label="Email Lucas">✉</a>
+        <button class="icon-link copy-email" type="button" data-copy-email aria-label="Copy email address" title="Copy email">⧉</button>
+        <button class="palette-trigger" type="button" data-open-palette><span>⌘ K</span></button>
+      </div>
     </div>
-    <!-- End #mobile-menu-toggle -->
-    <header class="sticky">
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#consulting">Consulting</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
+    <nav class="tabbar wrap" aria-label="Main navigation" role="tablist">
+      <a href="#/overview" role="tab" data-tab="overview">Overview</a>
+      <a href="#/experience" role="tab" data-tab="experience">Experience</a>
+      <a href="#/projects" role="tab" data-tab="projects">Projects</a>
+      <a href="#/education" role="tab" data-tab="education">Education</a>
+    </nav>
+  </header>
 
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Lucas Coster</h1>
-            <h2>Computer Engineer</h2>
-            <a href="Coster,Resume.pdf" class="btn-rounded-white">Download Resume</a>
-        </div>
-        <!-- End #lead-content -->
+  <main id="main" class="wrap main-content">
+    <section class="tab-panel" id="panel-overview" data-panel="overview" role="tabpanel" aria-labelledby="tab-overview">
+      <div class="page-heading"><div><p class="eyebrow">SCOUTING REPORT <span>·</span> 01 / 04</p><h1>Built with curiosity.<br><span>Driven by impact.</span></h1></div><a class="resume-button" href="Coster,Resume.pdf" target="_blank" rel="noreferrer">Download resume <span>↗</span></a></div>
+      <div class="bento-grid">
+        <article class="card intro-card glow-card"><div class="card-kicker"><span class="blue-mark">01</span> PLAYER PROFILE</div><h2>Hey, I’m Lucas.</h2><p>Hello! My name is Lucas Coster, and I am a Queen's University graduate with a degree in Applied Science majoring in Computer Engineering, along with a business minor focused on innovation and entrepreneurship. I’ve had a deep interest in coding since I wrote my first program in sixth grade.</p><p>During my studies, I developed a strong interest in Machine Learning and Artificial Intelligence, joining my school’s AI team and taking several deep learning and ML-related courses. I also have professional experience from a four-month software engineering internship at Briza, where I worked on a range of projects using multiple programming languages and technologies.</p><p>Outside of school and work, I’m passionate about sports—especially Ultimate Frisbee, which I’ve played since I was a kid. I recently had the opportunity to represent Canada at an international event.</p><p>I am currently working as a full-stack developer, where I’m excited to apply and continue expanding my technical skills.</p><div class="inline-links"><a href="mailto:lucascoster90@gmail.com">Let’s connect <span>↗</span></a><span class="mono">KINGSTON, ON · CANADA</span></div></article>
+        <button class="card player-card glow-card" type="button" data-flip-card aria-pressed="false" aria-label="Flip player card to see season stats"><span class="card-kicker"><span class="blue-mark">02</span> PLAYER CARD <span class="flip-hint">TAP TO FLIP ↻</span></span><span class="player-number">LC<span>24</span></span><span class="player-name">LUCAS<br>COSTER</span><span class="player-role">FULL-STACK DEVELOPER <i>·</i> COMPUTER ENGINEER</span><span class="player-divider"></span><span class="player-stats"><span><b>01</b><small>DEGREE</small></span><span><b>04</b><small>ROLES</small></span><span><b>06</b><small>PROJECTS</small></span></span><span class="player-card-back"><span class="card-kicker">SEASON STATS</span><span class="back-stat"><b>3.5+</b><small>Queen’s GPA</small></span><span class="back-stat"><b>CAN</b><small>Ultimate Frisbee · International event</small></span><span class="back-stat"><b>ML + WEB</b><small>Focus areas</small></span><span class="flip-hint">TAP TO RETURN ↻</span></span></button>
+        <article class="card now-card glow-card"><div class="card-kicker"><span class="blue-mark">03</span> CURRENT LINEUP</div><div class="now-status"><span class="live-dot"></span> CURRENTLY IN THE GAME</div><h2>EllisDon</h2><p>Full Stack Developer · Insights and Analytics</p><p class="muted">Building data-driven tools and internal platforms that support decision-making across the company.</p><a class="text-link" href="#/experience">View experience <span>→</span></a></article>
+        <article class="card featured-card glow-card"><div class="card-kicker"><span class="blue-mark">04</span> FEATURED TAPE</div><div class="feature-row"><div><span class="feature-type">MACHINE LEARNING</span><h2>Ovarian Cancer Early Warning</h2><p>Full-stack ML application for early detection research.</p></div><span class="feature-icon">✳</span></div><a class="text-link" href="#/projects">Explore all projects <span>→</span></a></article>
+        <article class="card skills-card glow-card"><div class="card-kicker"><span class="blue-mark">05</span> TOOLKIT</div><div class="tag-list"><span>Python</span><span>TypeScript</span><span>TensorFlow</span><span>React</span><span>JavaScript</span><span>Docker</span><span>AWS</span><span>SQL</span></div><a class="text-link" href="#/experience">Full experience & skills <span>→</span></a></article>
+      </div>
+      <section class="consulting-strip card glow-card"><div><p class="eyebrow">INDEPENDENT CONSULTING</p><h2>Good ideas deserve great execution.</h2><p>Empowering your business with tailored software solutions and expert guidance.</p></div><a class="text-link" href="#/experience">Consulting & services <span>→</span></a></section>
+    </section>
 
-        <div id="lead-overlay"></div>
+    <section class="tab-panel" id="panel-experience" data-panel="experience" role="tabpanel" aria-labelledby="tab-experience" hidden>
+      <div class="page-heading"><div><p class="eyebrow">CAREER GAME LOG <span>·</span> 02 / 04</p><h1>The box <span>score.</span></h1><p class="page-deck">Roles, responsibilities, and the work behind the numbers.</p></div></div>
+      <div class="section-label"><span>SEASON-BY-SEASON</span><span class="mono">04 ENTRIES</span></div>
+      <div class="experience-list">
+        <article class="card experience-card glow-card"><div class="role-top"><div><span class="role-index">01 / CURRENT</span><h2>EllisDon</h2><h3>Full Stack Developer</h3></div><time>OCT 2025 — PRESENT</time></div><p>At EllisDon, I work as a full-stack developer on the Insights and Analytics team, helping build data-driven tools and internal platforms that support decision-making across the company. My role involves developing end-to-end features, collaborating with data analysts and engineers, and contributing to scalable solutions that improve efficiency and deliver meaningful insights.</p><div class="outcome-grid"><div><span>01</span><p>Develop end-to-end features</p></div><div><span>02</span><p>Collaborate with data analysts and engineers</p></div><div><span>03</span><p>Build scalable solutions for efficiency and insights</p></div></div><div class="tag-list"><span>FULL STACK</span><span>DATA & ANALYTICS</span><span>INTERNAL PLATFORMS</span></div></article>
+        <article class="card experience-card glow-card"><div class="role-top"><div><span class="role-index">02 / CONSULTING</span><h2>Lucas Coster Consulting</h2><h3>Computer Consultant</h3></div><time>JAN 2025 — PRESENT</time></div><p>Founded my own consulting business to help small businesses with their computer needs. Currently working with a craft brewery to help them create an application to assist with tax reporting. Past projects include website creation and database management for a local law firm.</p><div class="outcome-grid"><div><span>01</span><p>Founded an independent consulting business</p></div><div><span>02</span><p>Craft brewery tax-reporting application</p></div><div><span>03</span><p>Website creation and legal database management</p></div></div><div class="tag-list"><span>CONSULTING</span><span>WEB DEVELOPMENT</span><span>DATABASES</span></div></article>
+        <article class="card experience-card glow-card"><div class="role-top"><div><span class="role-index">03 / INTERNSHIP</span><h2>Briza</h2><h3>Junior Software Developer</h3></div><time>MAY 2023 — AUG 2023</time></div><p>Developed using Typescript and HTML creating features for, and maintaining a full stack API platform. Worked using GitHub and Agile coding practices on complex problems in teams and independently. Tested through Docker and SQL data storages.</p><div class="outcome-grid"><div><span>01</span><p>Created and maintained full-stack API platform features</p></div><div><span>02</span><p>Worked collaboratively and independently using Agile</p></div><div><span>03</span><p>Tested with Docker and SQL data storage</p></div></div><div class="tag-list"><span>TYPESCRIPT</span><span>HTML</span><span>GITHUB</span><span>DOCKER</span><span>SQL</span></div></article>
+        <article class="card experience-card glow-card"><div class="role-top"><div><span class="role-index">04 / UNIVERSITY TEAM</span><h2>QMIND</h2><h3>Design Team Member</h3></div><time>SEP 2021 — MAY 2023</time></div><p>Worked on a multitude of design teams tasked with creating cutting edge ML projects to present in CUCAI, Canada's top AI conference. The projects were year round activities and gave me experience using Tensorflow and Python.</p><div class="outcome-grid"><div><span>01</span><p>Contributed to multiple machine learning design teams</p></div><div><span>02</span><p>Prepared projects for presentation at CUCAI</p></div><div><span>03</span><p>Built experience with TensorFlow and Python</p></div></div><div class="tag-list"><span>MACHINE LEARNING</span><span>TENSORFLOW</span><span>PYTHON</span><span>CUCAI</span></div></article>
+      </div>
+      <section class="card consulting-details glow-card"><p class="eyebrow">OFF THE CLOCK · CONSULTING & SAAS SERVICES</p><h2>Empowering your business with tailored software solutions and expert guidance.</h2><h3>What I Offer</h3><div class="offer-list"><span>Custom software development (web, cloud, automation)</span><span>Technical consulting & project planning</span><span>Software as a Service (SaaS) solutions</span><span>Code reviews, architecture, and mentoring</span></div><h3>Selected client work</h3><div class="client-grid"><article><img src="images/law_firm.jpg" alt="Law firm website project"><h4>Law Firm Website</h4><p>Website creation for an IP and Patent Law firm. Designed and deployed a professional online presence.</p><a href="http://costerlaw.ca/" target="_blank" rel="noreferrer">Visit Website ↗</a></article><article><img src="images/data_management.jpg" alt="Data management project"><h4>Data Management</h4><p>Handled IP and Patent applications, produced reports, and managed deadlines for legal processes.</p></article><article><img src="images/brewery_app.jpg" alt="Brewery app consulting"><h4>Brewery App Consulting</h4><p>Consulted on an application for a craft brewery to assist with tax reporting. Gathered requirements and researched competition.</p></article></div><div class="help-callout"><h3>How I Can Help</h3><p>Whether you need a new application, want to optimize your workflow, or seek expert advice on your next big idea, I’m here to help. I focus on clear communication, reliable delivery, and building solutions that grow with your business.</p></div></section>
+      <section class="card all-skills glow-card"><p class="eyebrow">FULL SKILL ROSTER</p><div class="tag-list"><span>JavaScript</span><span>Python</span><span>TypeScript</span><span>Machine Learning</span><span>Java</span><span>Agile</span><span>GitHub</span><span>React</span><span>PyCharm</span><span>C</span><span>TensorFlow</span><span>C++</span><span>Docker</span><span>AWS</span><span>API Environments</span><span>Algorithms</span><span>Requirements Engineering</span><span>Computer Architecture</span><span>Assembly Language</span><span>Computer Processing</span><span>OOP</span><span>Functional Programming</span><span>Linear</span><span>SQL</span><span>HTML</span><span>Model Creation</span></div></section>
+    </section>
 
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
+    <section class="tab-panel" id="panel-projects" data-panel="projects" role="tabpanel" aria-labelledby="tab-projects" hidden>
+      <div class="page-heading"><div><p class="eyebrow">PROJECT ARCHIVE <span>·</span> 03 / 04</p><h1>The film <span>room.</span></h1><p class="page-deck">A closer look at the builds, experiments, and ideas.</p></div></div>
+      <div class="filter-bar" role="group" aria-label="Filter projects"><span class="mono">FILTER BY</span><button class="filter-button active" data-filter="all" aria-pressed="true">ALL <span>06</span></button><button class="filter-button" data-filter="ml" aria-pressed="false">MACHINE LEARNING</button><button class="filter-button" data-filter="engineering" aria-pressed="false">ENGINEERING</button></div>
+      <div class="project-grid">
+        <article class="project-card card glow-card" data-category="ml" data-project="ovarian"><button class="project-open" type="button" aria-label="Open Ovarian Cancer Early Warning Application details"><img src="images/OvarianCancerProject.jpg" alt="Ovarian cancer early warning application"><span class="project-meta"><span>ML / HEALTH TECH</span><span>01 — 06</span></span><h2>Ovarian Cancer Early Warning Application</h2><p>Full-stack machine learning application for early ovarian cancer detection.</p><span class="tag-list"><span>PYTHON</span><span>PYTORCH</span><span>STREAMLIT</span></span><span class="card-cta">VIEW TAPE BREAKDOWN ↗</span></button><a class="project-external" href="https://ovapredict.streamlit.app/" target="_blank" rel="noreferrer">Live project ↗</a></article>
+        <article class="project-card card glow-card" data-category="ml" data-project="hand"><button class="project-open" type="button" aria-label="Open 3D Hand Tracking details"><img src="images/3DPoseEstimation.jpg" alt="3D hand tracking project"><span class="project-meta"><span>COMPUTER VISION</span><span>02 — 06</span></span><h2>3D Hand Tracking</h2><p>Custom model predicts hand shape and pose from a monocular RGB input.</p><span class="tag-list"><span>TENSORFLOW</span><span>PYTHON</span><span>COMPUTER VISION</span></span><span class="card-cta">VIEW TAPE BREAKDOWN ↗</span></button><a class="project-external" href="https://github.com/lucas22c/3D-Hand-Tracking" target="_blank" rel="noreferrer">GitHub repository ↗</a></article>
+        <article class="project-card card glow-card" data-category="engineering" data-project="cpu"><button class="project-open" type="button" aria-label="Open 32-Bit Verilog Computer details"><img src="images/32_Bit_Computer.jpg" alt="32-bit Verilog computer"><span class="project-meta"><span>COMPUTER ARCHITECTURE</span><span>03 — 06</span></span><h2>32-Bit Verilog Computer</h2><p>A functioning 32-bit CPU built around an ALU, RAM, and bus.</p><span class="tag-list"><span>VERILOG</span><span>CPU</span><span>SIMULATION</span></span><span class="card-cta">VIEW TAPE BREAKDOWN ↗</span></button><a class="project-external" href="https://github.com/lucas22c/ELEC374" target="_blank" rel="noreferrer">GitHub repository ↗</a></article>
+        <article class="project-card card glow-card" data-category="ml" data-project="nose"><button class="project-open" type="button" aria-label="Open Pet Nose Estimation details"><img src="images/Prediction9.jpg" alt="Pet nose estimation project"><span class="project-meta"><span>COMPUTER VISION</span><span>04 — 06</span></span><h2>Pet Nose Estimation</h2><p>ResNet18 model estimates nose location from pet images.</p><span class="tag-list"><span>PYTHON</span><span>RESNET18</span><span>DEEP LEARNING</span></span><span class="card-cta">VIEW TAPE BREAKDOWN ↗</span></button><a class="project-external" href="https://github.com/lucas22c/ELEC475_Lab5" target="_blank" rel="noreferrer">GitHub repository ↗</a></article>
+        <article class="project-card card glow-card" data-category="ml" data-project="movement"><button class="project-open" type="button" aria-label="Open Running VS Jumping Prediction details"><img src="images/RunningvsJumping.jpg" alt="Running versus jumping prediction"><span class="project-meta"><span>MOTION CLASSIFICATION</span><span>05 — 06</span></span><h2>Running VS Jumping Prediction</h2><p>Movement classification model trained on data collected with an iPhone.</p><span class="tag-list"><span>MACHINE LEARNING</span><span>DATA TRACKING</span><span>PYTHON</span></span><span class="card-cta">VIEW TAPE BREAKDOWN ↗</span></button><a class="project-external" href="https://github.com/lucas22c/ELEC390Project" target="_blank" rel="noreferrer">GitHub repository ↗</a></article>
+        <article class="project-card card glow-card" data-category="ml" data-project="phishing"><button class="project-open" type="button" aria-label="Open Phishing Email Detection details"><img src="images/urlDetection.jpg" alt="Phishing URL detection project"><span class="project-meta"><span>SECURITY / NLP</span><span>06 — 06</span></span><h2>Phishing Email Detection</h2><p>LSTM model classifies potentially dangerous URLs using a Kaggle dataset.</p><span class="tag-list"><span>LSTM</span><span>PYTHON</span><span>MACHINE LEARNING</span></span><span class="card-cta">VIEW TAPE BREAKDOWN ↗</span></button><a class="project-external" href="Final_Report.pdf" target="_blank" rel="noreferrer">View final report ↗</a></article>
+      </div>
+    </section>
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-Hello! My name is Lucas Coster, and I am a Queen's University graduate with a degree in Applied Science majoring in Computer Engineering, along with a business minor focused on innovation and entrepreneurship. I’ve had a deep interest in coding since I wrote my first program in sixth grade.
+    <section class="tab-panel" id="panel-education" data-panel="education" role="tabpanel" aria-labelledby="tab-education" hidden>
+      <div class="page-heading"><div><p class="eyebrow">DRAFT & DEVELOPMENT <span>·</span> 04 / 04</p><h1>Built on a strong <span>foundation.</span></h1><p class="page-deck">Education, academic milestones, and the teams that shaped my game.</p></div></div>
+      <div class="education-layout"><div class="education-timeline">
+        <article class="card education-card glow-card"><div class="education-date mono">SEP 2020 — MAY 2024</div><span class="education-badge">01 · UNIVERSITY</span><h2>Queen’s University</h2><h3>Bachelor Of Applied Science in Computer Engineering</h3><p>Graduate from Computer Engineering at Queen's University studying Computer Engineering with a minor in innovation and entrepreneurship. Throughout my four years I have maintained a 3.5 and above GPA while playing Ultimate Frisbee on the University team putting me on the academic all stars list every semester.</p><div class="education-highlights"><span><b>3.5+</b> GPA</span><span><b>4 YEARS</b> University Ultimate Frisbee</span><span><b>EVERY SEMESTER</b> Academic all-stars list</span></div><div class="tag-list"><span>COMPUTER ENGINEERING</span><span>INNOVATION</span><span>ENTREPRENEURSHIP</span></div></article>
+        <article class="card education-card glow-card"><div class="education-date mono">SEP 2016 — MAY 2020</div><span class="education-badge">02 · SECONDARY</span><h2>Mayfield Secondary School</h2><h3>Highschool Diploma</h3><p>Graduated Highscool with honours and earned a 95% average in my final year. Played full time on the football and soccer teams throughout my time as a student.</p><div class="education-highlights"><span><b>95%</b> Final-year average</span><span><b>HONOURS</b> Graduate</span><span><b>FOOTBALL + SOCCER</b> School teams</span></div></article>
+      </div><aside class="education-aside card glow-card"><p class="eyebrow">DEVELOPMENT TRACK</p><h2>Always learning.</h2><p>During my studies, I developed a strong interest in Machine Learning and Artificial Intelligence, joining my school’s AI team and taking several deep learning and ML-related courses.</p><div class="milestone"><span>2021 — 2023</span><p>QMIND design team member; machine learning projects presented at CUCAI.</p></div><div class="milestone"><span>2023</span><p>Software engineering internship at Briza, working across programming languages and technologies.</p></div><div class="milestone"><span>2024</span><p>Graduated from Queen’s University with a degree in Applied Science in Computer Engineering.</p></div><div class="milestone"><span>BEYOND THE CLASSROOM</span><p>Passionate about Ultimate Frisbee; represented Canada at an international event.</p></div><a class="text-link" href="#/experience">See the full game log <span>→</span></a></aside></div>
+    </section>
 
-During my studies, I developed a strong interest in Machine Learning and Artificial Intelligence, joining my school’s AI team and taking several deep learning and ML-related courses. I also have professional experience from a four-month software engineering internship at Briza, where I worked on a range of projects using multiple programming languages and technologies.
+    <section class="contact-footer card glow-card"><div><p class="eyebrow">NEXT PLAY</p><h2>Have a good one in mind?</h2><p>Whether you need a new application, want to optimize your workflow, or seek expert advice on your next big idea, I’m here to help. I focus on clear communication, reliable delivery, and building solutions that grow with your business.</p></div><form class="contact-form" method="POST" action="https://formspree.io/lucascoster90@gmail.com"><input type="hidden" name="_subject" value="Contact request from personal website"><label><span class="sr-only">Your email</span><input type="email" name="_replyto" placeholder="Your email" required></label><label><span class="sr-only">Your message</span><textarea name="message" placeholder="Your message" required></textarea></label><button class="submit-button" type="submit">Send a message <span>↗</span></button></form></section>
+  </main>
+  <footer class="site-footer wrap"><span>© <span data-current-year>2026</span> Lucas Coster</span><span class="footer-note">MADE WITH INTENTION <i>·</i> DEPLOYED ON GITHUB PAGES</span><button type="button" data-back-top>BACK TO TOP ↑</button></footer>
 
-Outside of school and work, I’m passionate about sports—especially Ultimate Frisbee, which I’ve played since I was a kid. I recently had the opportunity to represent Canada at an international event.
-
-I am currently working as a full-stack developer, where I’m excited to apply and continue expanding my technical skills.                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-             <div data-date="October 2025 – Present">
-                <h3>EllisDon</h3>
-                <h4>Full Stack Developer</h4>
-                <p>
-                    At EllisDon, I work as a full-stack developer on the Insights and Analytics team, helping build data-driven tools and internal platforms that support decision-making across the company. My role involves developing end-to-end features, collaborating with data analysts and engineers, and contributing to scalable solutions that improve efficiency and deliver meaningful insights.           
-                <p>
-                </div>
-
-            <div data-date= "January 2025 – Present" >
-                <h3>Lucas Coster Consulting</h3>
-                <h4>Computer Consultant</h4>
-                <p>
-                    Founded my own consulting business to help small buisinesses with their computer needs. Currently working with a craft brewery to help them create an application to assist with tax reporting. Past projects include website creation and database managment for a local law firm.
-                </p>
-            </div>
-
-            <div data-date="May 2023 – August 2023">
-                <h3>Briza</h3>
-                <h4>Junior Software Developer</h4>
-                <p>
-                    Developed using Typescript and HTML creating features for, and maintaining a full stack API platform. Worked using GitHub and Agile coding practices on complex problems in teams and independently. Tested through Docker and SQL data storages                
-                </p>
-            </div>
-
-            <div data-date="September 2021 – May 2023">
-                <h3>QMIND </h3>
-                <h4>Design Team Member</h4>
-                <p>
-                    Worked on a multitude of design teams tasked with creating cutting edge ML projects to present in CUCAI, Canada's top AI conference. The projects were year rounda activites and gave me experience using Tensorflow and Python. 
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>Queen's University</h3>
-            <span class="education-date">Sept 2020 - May 2024</span>
-            <h4>Bachelor Of Applied Science in Computer Engineering</h4>
-            <p>
-                Graduate from Computer Engineering at Queen's University studying Computer Engineering with a minor in innovation and entrepreneurship. Throughout my four years I have maintained a 3.5 and above GPA well playing Ultimate Frisbee on the University team putting me on the academic all stars list every semester.            </p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>Mayfield Secondary School</h3>
-            <span class="education-date">Sept 2016 - May 2020</span>
-            <h4>Highschool Diploma</h4>
-            <p>
-                   Graduated Highscool with honours and earned a 95% average in my final year. Played full time on the football and soccer teams throughout my time as a student.
-            </p>
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images\OvarianCancerProject.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Ovarian Cancer Early Warning Application</h3>
-                        <p>
-                            For my final capstone project, I worked in a team to create a full machine learning application with the goal of early detection of ovarian cancer. The project used a dataset provided by the National Cancer Institute (NCI) and was built using python code utilizing multiple pytorch and tensorflow libraries. The frontend of the project was developed using streamlit and the full working website can be accessed through the link below                                          </p>
-                        <a href="https://ovapredict.streamlit.app/">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images\3DPoseEstimation.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>3D Hand Tracking</h3>
-                        <p>
-                            Built a custom Tensorflow model to predict the 3D shape and pose of a hand using just a monocular RGB input. The ultimate goal was to extend the model to predict two-hands through high hand-to-hand and hand-to-object contact. The project was done through the QMIND AI team at Queen's University and presented at the CUCAI conference.                        </p>
-                        <a href="https://github.com/lucas22c/3D-Hand-Tracking">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images\32_Bit_Computer.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>32-Bit Verilog Computer</h3>
-                        <p>
-                            Built a fully functioning 32-Bit CPU connected to an ALU, RAM and BUS in Verilog. Ran simulations and tested uses such as Arithmetic, funciton calls and jumps as well as memory storing and loading. 
-                        </p>
-                        <a href="https://github.com/lucas22c/ELEC374">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-            <a id="view-more-projects" href="#">View More Projects</a>
-            <div id="more-projects" class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images\Prediction9.jpg" />
-                    </div>
-                     <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Pet Nose Estimation</h3>
-                        <p>
-                            Using techniques learned throughout a deep learning in computer vision course, I built an AI model using the Resnet18 Architecture which took images of pets and predicted their nose location. This project involved long train times and data collection along with the issue of resizing and matching image sizes for training.
-                        </p>
-                        <a href="https://github.com/lucas22c/ELEC475_Lab5">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images\RunningvsJumping.jpg" />
-                    </div>
-                     <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Running VS Jumping Prediction</h3>
-                        <p>
-                            Using data tracking and modeling techniques as a group I worked on creating an AI model to predict whether a users movement was jumping or running. All training data was collected on an Iphone and then pre-processed before being run through a pre-built model.
-                        </p>
-                        <a href="https://github.com/lucas22c/ELEC390Project">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images\urlDetection.jpg" />
-                    </div>
-                     <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Phishing Email Detection</h3>
-                        <p>
-                            Took a provided Kaggle dataset and pre-proccessed the data before running it through an LSTM model to predict whether a URL was a dangerous site or not. The model along with the data was changed in a multitude of ways to improve accuracy and decrease training times.                     
-                        </p>
-                        <a href="Final_Report.pdf">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="consulting" class="background-alt">
-        <div class="container" style="text-align: center; max-width: 800px; margin: 0 auto;">
-            <h2 class="heading">Consulting & SaaS Services</h2>
-            <p style="font-size:1.2em;">Empowering your business with tailored software solutions and expert guidance.</p>
-            <section>
-                <h3>What I Offer</h3>
-                <ul style="display: inline-block; text-align: left; margin: 0 auto;">
-                    <li>Custom software development (web, cloud, automation)</li>
-                    <li>Technical consulting & project planning</li>
-                    <li>Software as a Service (SaaS) solutions</li>
-                    <li>Code reviews, architecture, and mentoring</li>
-                </ul>
-    
-            <section>
-                <h3>Jobs</h3>
-                <div class="jobs-list" style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-top: 24px;">
-                    <div class="job-card" style="background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); width: 210px; padding: 16px; text-align: center;">
-                        <img src="images/law_firm.jpg" alt="Law Firm Website" style="width: 140px; height: 50px; object-fit: cover; border-radius: 50%; margin-bottom: 10px;">
-                        <h4 style="margin-bottom: 8px;">Law Firm Website</h4>
-                        <p style="font-size: 0.95em; color: #444;">Website creation for an IP and Patent Law firm. Designed and deployed a professional online presence.</p>
-                        <a href="http://costerlaw.ca/" target="_blank" style="font-size: 0.95em; color: #337ab7; text-decoration: underline;">Visit Website</a>
-                    </div>
-                    <div class="job-card" style="background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); width: 210px; padding: 16px; text-align: center;">
-                        <img src="images/data_management.jpg" alt="Data Management" style="width: 140px; height: 70px; object-fit: cover; border-radius: 50%; margin-bottom: 10px;">
-                        <h4 style="margin-bottom: 8px;">Data Management</h4>
-                        <p style="font-size: 0.95em; color: #444;">Handled IP and Patent applications, produced reports, and managed deadlines for legal processes.</p>
-                    </div>
-                    <div class="job-card" style="background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); width: 210px; padding: 16px; text-align: center;">
-                        <img src="images/brewery_app.jpg" alt="Brewery App Consulting" style="width: 140px; height: 50px; object-fit: cover; border-radius: 50%; margin-bottom: 10px;">
-                        <h4 style="margin-bottom: 8px;">Brewery App Consulting</h4>
-                        <p style="font-size: 0.95em; color: #444;">Consulted on an application for a craft brewery to assist with tax reporting. Gathered requirements and researched competition.</p>
-                    </div>
-                </div>
-                </div>
-            </section>
-
-            <section style="display: flex; justify-content: center; align-items: center; margin-top: 48px; margin-bottom: 48px; width: 100%;">
-                <div style="background: #fff; border-radius: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.10); padding: 28px 32px; max-width: 600px; width: 100%; text-align: center; margin: 0 auto;">
-                    <h3 style="margin-top: 0; color: #337ab7; font-weight: 700;">How I Can Help</h3>
-                    <p style="font-size: 1.08em; color: #222; margin-bottom: 0;"></p>
-                        Whether you need a new application, want to optimize your workflow, or seek expert advice on your next big idea, I’m here to help. I focus on clear communication, reliable delivery, and building solutions that grow with your business.
-                    </p>
-                </div>
-            </section>
-        </div>
-    </div>
-    <!-- End #consulting -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>TypeScript</li>
-            <li>Machine Learning</li>
-            <li>Java</li>
-            <li>Agile</li>
-            <li>GitHub</li>
-            <li>React</li>
-            <li>PyCharm</li>
-            <li>C</li>
-            <li>TensorFlow</li>
-            <li>C++</li>
-            <li>Docker</li>
-            <li>AWS</li>
-            <li>API Enviroments</li>
-            <li>Algorithms</li>
-            <li>Requirements Engineering</li>
-            <li>Computer Architecture</li>
-            <li>Assembly Language</li>
-            <li>Computer Processing</li>
-            <li>OOP</li>
-            <li>Functional Programming</li>
-            <li>Linear</li>
-            <li>SQL</li>
-            <li>HTML</li>
-            <li>Model Creation</li>
-        </ul>
-    </div>
-    <!-- End #skills -->
-
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/lucascoster90@gmail.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; <span id="current-year">2024</span> Lucas Coster
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/lucas22c" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/lucascoster/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+  <dialog class="project-dialog" data-project-dialog aria-labelledby="dialog-title"><button class="dialog-close" type="button" data-close-dialog aria-label="Close project details">×</button><p class="eyebrow">TAPE BREAKDOWN</p><span class="project-meta" data-dialog-meta></span><h2 id="dialog-title" data-dialog-title></h2><p class="dialog-summary" data-dialog-summary></p><div class="dialog-section"><h3>THE PLAY</h3><p data-dialog-problem></p></div><div class="dialog-section"><h3>ARCHITECTURE / APPROACH</h3><p data-dialog-approach></p></div><div class="dialog-section"><h3>IMPACT</h3><p data-dialog-impact></p></div><div class="tag-list" data-dialog-tags></div><a class="dialog-link" data-dialog-link target="_blank" rel="noreferrer">Explore project ↗</a></dialog>
+  <dialog class="palette-dialog" data-palette-dialog aria-label="Command palette"><div class="palette-search"><span>⌕</span><input type="text" data-palette-input placeholder="Search or jump to..." aria-label="Search commands"><kbd>ESC</kbd></div><p class="palette-label">NAVIGATION</p><button data-command="overview"><span>Overview</span><kbd>01</kbd></button><button data-command="experience"><span>Experience</span><kbd>02</kbd></button><button data-command="projects"><span>Projects</span><kbd>03</kbd></button><button data-command="education"><span>Education</span><kbd>04</kbd></button><p class="palette-label">QUICK ACTION</p><button data-command="copy"><span>Copy email address</span><kbd>↵</kbd></button></dialog>
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+  <script type="application/json" id="project-data">{"ovarian":{"title":"Ovarian Cancer Early Warning Application","category":"ML / HEALTH TECH","summary":"For my final capstone project, I worked in a team to create a full machine learning application with the goal of early detection of ovarian cancer.","problem":"The project aimed to support early detection of ovarian cancer using a dataset provided by the National Cancer Institute (NCI).","approach":"Built with Python, utilizing multiple PyTorch and TensorFlow libraries for the machine learning component. The frontend was developed using Streamlit, and the full working website is available through the project link.","impact":"Delivered a full machine learning application and working Streamlit website for early ovarian cancer detection. No quantitative impact metrics were listed in the original project description.","tags":["PYTHON","PYTORCH","TENSORFLOW","STREAMLIT"],"url":"https://ovapredict.streamlit.app/"},"hand":{"title":"3D Hand Tracking","category":"COMPUTER VISION","summary":"Built a custom Tensorflow model to predict the 3D shape and pose of a hand using just a monocular RGB input.","problem":"Estimate a hand’s 3D shape and pose from a single monocular RGB input; the eventual goal was to extend prediction to two-hand interactions.","approach":"Created a custom TensorFlow model through the QMIND AI team at Queen’s University. The planned extensions included two-hands, hand-to-hand, and hand-to-object contact.","impact":"Presented the project at the CUCAI conference. No quantitative impact metrics were listed in the original project description.","tags":["TENSORFLOW","PYTHON","COMPUTER VISION"],"url":"https://github.com/lucas22c/3D-Hand-Tracking"},"cpu":{"title":"32-Bit Verilog Computer","category":"COMPUTER ARCHITECTURE","summary":"Built a fully functioning 32-Bit CPU connected to an ALU, RAM and BUS in Verilog.","problem":"Build and verify a functional 32-bit computer capable of arithmetic, function calls, jumps, and memory operations.","approach":"Connected a CPU to an ALU, RAM, and bus in Verilog; ran simulations to test arithmetic, function calls, jumps, and memory storing and loading.","impact":"Implemented and simulation-tested the described CPU operations. No quantitative impact metrics were listed in the original project description.","tags":["VERILOG","CPU","ALU","RAM"],"url":"https://github.com/lucas22c/ELEC374"},"nose":{"title":"Pet Nose Estimation","category":"COMPUTER VISION","summary":"An AI model using ResNet18 to predict the nose location in images of pets.","problem":"Predict pet nose location while handling long training times, data collection, and the need to resize and match image sizes for training.","approach":"Applied techniques from a deep learning in computer vision course to build a model using the ResNet18 architecture.","impact":"Produced a model that predicts nose location from pet images. No quantitative impact metrics were listed in the original project description.","tags":["PYTHON","RESNET18","DEEP LEARNING"],"url":"https://github.com/lucas22c/ELEC475_Lab5"},"movement":{"title":"Running VS Jumping Prediction","category":"MOTION CLASSIFICATION","summary":"A group project to predict whether a user’s movement was jumping or running.","problem":"Classify whether a user’s movement is running or jumping from collected movement data.","approach":"Used data tracking and modeling techniques as a group. Training data was collected on an iPhone and pre-processed before being run through a pre-built model.","impact":"Created a movement prediction model using collected and pre-processed data. No quantitative impact metrics were listed in the original project description.","tags":["MACHINE LEARNING","DATA TRACKING","PYTHON"],"url":"https://github.com/lucas22c/ELEC390Project"},"phishing":{"title":"Phishing Email Detection","category":"SECURITY / NLP","summary":"An LSTM model that predicts whether a URL is a dangerous site, using a provided Kaggle dataset.","problem":"Identify dangerous URLs from a dataset, improving model accuracy while decreasing training times.","approach":"Pre-processed a provided Kaggle dataset and used an LSTM model. Modified the model and data in multiple ways to improve accuracy and reduce training time.","impact":"Focused on improved accuracy and reduced training time; the original description does not specify measured values. The project report is available as a PDF.","tags":["LSTM","PYTHON","MACHINE LEARNING"],"url":"Final_Report.pdf"}}</script>
 </body>
-
 </html>
