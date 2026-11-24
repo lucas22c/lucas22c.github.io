@@ -1,0 +1,36 @@
+/* Craft pass: put the rink and project work first; keep the interface quiet. */
+:root{--surface:#111827;--surface-2:#151e2d;--line:rgba(255,255,255,.08);--sans:"Plus Jakarta Sans",sans-serif;--mono:"DM Mono",monospace}
+body{font-size:14px;line-height:1.65}
+.scorebug{backdrop-filter:blur(10px)}
+.header-status,.eyebrow,.card-kicker,.role-index,.role-top time,.section-label,.project-meta,.feature-type,.player-role,.player-stats small,.tag-list,.education-date,.education-badge,.milestone>span,.footer-note,.filter-bar>span,.filter-button,.card-cta,.rink-caption{letter-spacing:.025em}
+.glow-card:before{display:none}
+.glow-card:hover{border-color:rgba(255,255,255,.16)}
+.card{box-shadow:none}
+.intro-card h2,.now-card h2,.featured-card h2,.consulting-strip h2,.contact-footer h2,.education-card h2,.role-top h2{font-weight:600;letter-spacing:-.025em}
+h1{font-weight:600;letter-spacing:-.035em}
+h1 span,.lineup-heading h2 span{color:var(--text)}
+.page-heading .eyebrow,.card-kicker,.role-index,.section-label,.filter-bar>span,.footer-note{color:#a7b3c2}
+.tabbar a[aria-selected="true"]{border-bottom-color:var(--blue)}
+.icon-link:hover,.palette-trigger:hover,.filter-button.active,.filter-button:hover{background:#151e2d}
+.project-card:hover{transform:none;border-color:rgba(255,255,255,.18)}
+.resume-button:hover,.submit-button:hover{background:#192431;border-color:rgba(56,189,248,.55)}
+/* The reverse face must counter-rotate the card so the back typography reads normally. */
+.rookie-card{transition:transform .18s ease,border-color .18s}
+.rookie-card.is-flipped{transform:perspective(850px) rotateX(0deg) rotateY(180deg)}
+.rookie-card .player-card-back{transform:rotateY(0deg);backface-visibility:hidden}
+.rookie-card.is-flipped .player-card-back{transform:rotateY(180deg)}
+.rookie-card:after{background:radial-gradient(circle at var(--shine-x,50%) var(--shine-y,50%),rgba(255,255,255,.08),transparent 42%)}
+/* Six true roster positions: three forwards, two defenders, and a goalie. */
+.formation-rink{min-height:360px}
+.formation-slots{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,1fr);padding:16px 8%}
+.formation-player:nth-child(1){grid-column:1;grid-row:1}
+.formation-player:nth-child(2){grid-column:2;grid-row:1}
+.formation-player:nth-child(3){grid-column:3;grid-row:1}
+.formation-player:nth-child(4){grid-column:1;grid-row:2}
+.formation-player:nth-child(5){grid-column:3;grid-row:2;justify-self:center;margin:0}
+.formation-player:nth-child(6){display:grid;grid-column:2;grid-row:3}
+.formation-player{width:120px;min-height:72px;box-shadow:none}
+.formation-player:hover,.formation-player.is-selected{box-shadow:inset 0 0 0 1px rgba(56,189,248,.12)}
+.formation-center-line{z-index:0}
+@media(max-width:600px){.formation-rink{min-height:340px}.formation-slots{padding:12px 3%}.formation-player{width:min(92px,27vw);min-height:64px}.formation-player:nth-child(5){grid-column:3;grid-row:2;justify-self:center}.formation-player:nth-child(6){grid-column:2;grid-row:3}.formation-circle{width:56px;height:56px}}
+@media(prefers-reduced-motion:reduce){.rookie-card{transition:none!important}}
